@@ -1,0 +1,163 @@
+ 
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="80%" height="100%"> 
+      <table width="100%" height="100%" border="0" cellpadding="2" cellspacing="0" class="lside">
+        <tr> 
+          <td width="40" height="40" valign="top"><img src="template/myy1/images/9.gif" width="40" height="40"></td>
+          <td width="100%" height="40"> 
+            <table width="230" height="28" border="0" cellpadding="0" cellspacing="1" bgcolor="#EF9C08">
+              <tr> 
+                <td align="center" valign="middle" nowrap bgcolor="#f3e738"><font size="2">{searchkey}</font></td>
+              </tr>
+            </table>
+          </td>
+          <td width="40" height="40" align="right" valign="top"><img src="template/myy1/images/12.gif" width="40" height="40"></td>
+        </tr>
+        <tr> 
+          <td height="100%" colspan="3" valign="top"> 
+            <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="lside">
+              <tr> 
+                <td width="20" height="100%"><img src="template/myy1/images/empty.gif" width="20" height="10"></td>
+                <td height="100%" valign="top"> 
+                  <table width="100%" border="0" cellspacing="2" cellpadding="0" class='lside' style="display:{display}">
+                    <tr> 
+                      <td colspan="2" align="right" ><table width="100%" border="0" cellspacing="0" cellpadding="0" class='lside'>
+                          <tr> 
+                            <td width="100%" nowrap >{resultsnum} </td>
+                            <td nowrap >{pagenum}&nbsp;&nbsp; </td>
+                            <form name="form2" method="post" action="{jumpaction}">
+                              <td nowrap style="display:{display2}"> <input name="page" type="text" size="5" maxlength="5"  > 
+                                <input type="submit" name="jump" value="{jump}" class="form1"> 
+                              </td>
+                            </form>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td height="1" colspan="2" bgcolor="#000000" ></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <!--  BEGIN results -->
+                    <tr> 
+                      <td colspan="2" > <table width="100%" border="0" cellspacing="0" cellpadding="0" class="lside">
+                          <tr> 
+                            <td width="10" nowrap>{num}</td>
+                            <td bgcolor="#eeeeee">{resultposition} </td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td width="50"><img src="template/myy1/images/empty.gif" width="50" height="10"></td>
+                      <td height="100%" >{littlecut}</td>
+                    </tr>
+                    <tr> 
+                      <td width="50">&nbsp;</td>
+                      <td align="right" ><br>
+                        {author}&nbsp;&nbsp;&nbsp;&nbsp;{postdate}</td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2"><img src="template/myy1/images/empty.gif" width="500" height="5"></td>
+                    </tr>
+                    <!--  END results -->
+                    <tr> 
+                      <td colspan="2" >&nbsp; </td>
+                    </tr>
+                    <tr> 
+                      <td height="1" colspan="2" bgcolor="#000000"></td>
+                    </tr>
+                    <tr> 
+                      <td height="4" colspan="2" ><table width="100%" border="0" cellspacing="0" cellpadding="0"  class='lside'>
+                          <tr> 
+                            <td width="100%" nowrap >{resultsnum} </td>
+                            <td nowrap >{pagenum}&nbsp;&nbsp; </td>
+                            <form name="form3" method="post" action="{jumpaction}">
+                              <td nowrap style="display:{display2}"> <input name="page" type="text" size="5" maxlength="5"  > 
+                                <input type="submit" name="jump" value="{jump}" class="form1"> 
+                              </td>
+                            </form>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td width="20"><img src="template/myy1/images/empty.gif" width="20" height="10"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td colspan="3" align="right" >&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td height="2" ></td>
+          <td ></td>
+        </tr>
+        <tr> 
+          <td width="40" height="40" valign="bottom"><img src="template/myy1/images/8.gif" width="40" height="40"></td>
+          <form name="form1" method="post" action="">
+            <td valign="bottom"><img src="images/empty.gif" width="500" height="1"> 
+              <table border="0" cellspacing="0" cellpadding="0" class="lside">
+                <tr> 
+                  <td align="right" nowrap>&nbsp;&nbsp;<select name="select1" class="form1" onChange="if((this.value)!='')window.open(this.value);">
+                      <option value="">{urls}</option>
+                      <!-- BEGIN allurls -->
+                        {urlname}
+					  <!-- END allurls -->
+                    </select> </td>
+                </tr>
+              </table>
+            </td>
+          </form>
+          <td height="40" align="right" valign="bottom"><img src="template/myy1/images/11.gif" width="40" height="40"></td>
+        </tr>
+      </table></td>
+		<form name="searchform" method="post" action={searchaction}>
+      <td width="1" valign="top" bgcolor="#336699"><img src="images/empty.gif" width="1" height="1"></td>
+      <td width="20%" valign="top" bgcolor="#f3e738"> <table width="100%" height="25" border="0" cellpadding="2" cellspacing="3" bgcolor="#669933">
+          <tr> 
+            <td align="center"> <input name="key" type="text" size="17" maxlength="50" value="" class="form1" > 
+            </td>
+          </tr>
+          <tr> 
+            <td align="center"> <select name="cat" size="1" class="form1">
+                <option value="all" selected>{searchall}</option>
+                <!-- BEGIN searchcats -->
+                        {searchname}
+					  
+                <!-- END searchcats -->
+              </select> <input class="form1" name="Submit" type="submit"   value="{search}"></td>
+          </tr>
+          <tr> 
+            <td align="center"><img src="template/myy1/images/empty.gif" width="150" height="2"></td>
+          </tr>
+        </table>
+        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td valign="top"> <table width="100%" border="0" cellpadding="0" cellspacing="4"  class="rside">
+                <tr align="center"> 
+                  <td colspan="2" valign="top">{postarticle}&nbsp;{newcat}</td>
+                </tr>
+                <tr> 
+                  <td colspan="2" align="center">{myyup}</td>
+                </tr>
+                <!--  BEGIN subnames -->
+                <tr> 
+                  <td valign="top">{subnum}</td>
+                  <td width="100%">{subname}</td>
+                </tr>
+                <!--  END subnames -->
+                <tr> 
+                  <td colspan="2" align="center">{myydown}</td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+	  </form>
+  </tr>
+</table>
+

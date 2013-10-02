@@ -1,0 +1,143 @@
+a {
+	font-family: 宋体;
+	text-decoration: none;
+}
+li {
+	font-family: 宋体;
+	text-decoration: none;
+	COLOR: #214B67;
+}
+.imgl {
+	float: left;
+}
+.imgr {
+	float: right;
+}
+.imgurl {
+	color: #FF0000;
+	overflow: auto;
+	font-size: 12px;
+	background-color: #eeeeee;
+	border: none;
+}
+.form1 {
+	font-family: 宋体;
+	font-size: 12px;
+}
+.form2 {
+	font-family: 宋体;
+	font-size: 12px;
+	overflow: auto;
+}
+.rside
+{   
+	font-family: 宋体;
+	font-size: 12px;
+	COLOR: #214B67;
+   
+}
+.rside A:link
+{   
+	font-family: 宋体;
+	font-size: 12px;
+	COLOR: #214B67;
+	TEXT-DECORATION: none;
+}
+.rside A:visited
+{
+	font-family: 宋体;
+	font-size: 12px;
+	COLOR: #999999;
+	TEXT-DECORATION: none;
+}
+.rside A:hover
+{   
+	font-size: 12px;
+	COLOR: #ff0000;
+	text-decoration: underline;
+}
+table
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #214B67;
+	line-height: 20px;
+}
+.lside
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #214B67;
+	line-height: 20px;
+}
+.lside a:link
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #214B67;
+	
+}
+.lside a:visited
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #999999;
+	
+}
+.lside a:hover
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #cc9900;
+	text-decoration: underline;
+}
+
+.table1 
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #ffffff;
+}
+.table1 a:visited
+{
+	font-family: 宋体;
+	color: #ffffff;
+}
+.table1 a:link
+{
+	font-family: 宋体;
+	color: #ffffff;
+}
+.table1 a:hover
+{
+	font-family: 宋体;
+	color: #FFFF00;
+	text-decoration: underline;
+}
+.table2 
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #214B67;
+	text-decoration: none;
+}
+.table2 a:link 
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #214B67;
+	text-decoration: none;
+}
+.table2 a:hover
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: underline;
+}
+.table2 a:visited
+{
+	font-family: 宋体;
+	font-size: 12px;
+	color: #999999;
+}

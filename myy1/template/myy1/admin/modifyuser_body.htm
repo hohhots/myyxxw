@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={myyencode}">
+<title>{myytitle}</title>
+<link href="../template/myy1/myy1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" style="cursor:default">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="200" valign="top"  style="border-left:solid;border-color:#336699;border-width:1px;"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="2"  style="font-size:12px">
+        <tr> 
+          <td width="40"><img src="../template/myy1/images/9.gif" width="40" height="40"></td>
+          <td align="center"><font color="#009933">{myyphotos}</font> </td>
+          <td width="40" align="right"><img src="../template/myy1/images/12.gif" width="40" height="40"></td>
+        </tr>
+      </table>
+      <iframe src="{photossrc}" width="200" name="photos" height="100%" frameborder="0"></iframe> 
+    </td>
+    <td height="44"> <table width="100%" height="100%" border="0" cellpadding="2" cellspacing="0" class="lside">
+        <tr> 
+          <td height="40" valign="top"><img src="../template/myy1/images/9.gif" width="40" height="40"></td>
+          <td height="40" align="center">{home} </td>
+          <td height="40" align="right" valign="top"><img src="../template/myy1/images/12.gif" width="40" height="40"></td>
+        </tr>
+        <tr> 
+          <td colspan="3" valign="top"> <form name="myyform1" method="post" action="{modifyuseraction}">
+              <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="lside">
+                <tr> 
+                  <td width="20"><img src="../template/myy1/images/empty.gif" width="20" height="10"></td>
+                  <td valign="top" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td><font size="2">{username}<br>
+                          <input name="username" type="text" class="form1" size="30" maxlength="30" value="{usernamevalue}">
+                          <br>
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td><textarea name="myymessage" cols="83" rows="2" class="imgurl"></textarea></td>
+                      </tr>
+                      <tr> 
+                        <td><font size="2"><br>
+                          {resume}<br>
+                          <textarea name="resume" cols="82" rows="25" class="form2">{resumevalue}</textarea>
+                          </font></td>
+                      </tr>
+                      <tr> 
+                        <td width="500" align="center"><br> <input type="submit" name="Submit" value=" {pmvalue} " class="form1"> 
+                          <br> <br> </td>
+                      </tr>
+                    </table></td>
+                  <td width="20"><img src="../template/myy1/images/empty.gif" width="20" height="10"></td>
+                </tr>
+              </table>
+            </form></td>
+        </tr>
+        <tr> 
+          <td height="40" valign="bottom"><img src="../template/myy1/images/8.gif" width="40" height="40"></td>
+          <form name="form1" method="post" action="">
+            <td align="center"><font class="lside">{home}</font><br> <br> <font class="table2">{service}</font></td>
+          </form>
+          <td height="40" align="right" valign="bottom"><img src="../template/myy1/images/11.gif" width="40" height="40"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
